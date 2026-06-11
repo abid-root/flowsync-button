@@ -1315,3 +1315,30 @@ input:focus {
 }
 
 /* ===== LIGHT THEME BETTER + DARK DEFAULT END ===== */
+
+/* ===== LOBBY MASTERPIECE CARD FIX START ===== */
+
+/* Masterpiece card should behave exactly like the other lobby category cards */
+#categoryMap .masterpiece-card-link {
+  position: relative !important;
+  inset: auto !important;
+  width: auto !important;
+  margin: 0 !important;
+  transform: none;
+}
+
+/* If any old card is accidentally outside the category grid, hide it */
+.category-map > .masterpiece-card-link,
+.lobby-shell > .masterpiece-card-link {
+  display: none !important;
+}
+
+/* Slight premium border for the Masterpiece card */
+#categoryMap .masterpiece-card-link {
+  border-color: color-mix(in srgb, var(--accent) 38%, var(--line)) !important;
+  background:
+    radial-gradient(circle at 20% 15%, color-mix(in srgb, var(--accent) 12%, transparent), transparent 150px),
+    var(--surface) !important;
+}
+
+/* ===== LOBBY MASTERPIECE CARD FIX END ===== */

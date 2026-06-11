@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Masterpiece Buttons — Buttonverse Lab</title>
+  <meta name="description" content="100 curated high-quality button designs with source code.">
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../assets/styles.css">
+  <link rel="stylesheet" href="../assets/masterpiece-buttons.css">
+</head>
+<body class="masterpiece-body" data-page="masterpieces">
+  <div class="ambient" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <a class="brand" href="../index.html">
+      <span class="brand-cube">BV</span>
+      <span><strong>Buttonverse</strong><small>Masterpieces</small></span>
+    </a>
+    <nav class="toplinks">
+      <a href="../index.html">Lobby</a>
+      <a href="../library.html">Library</a>
+      <a href="index.html" aria-current="page">Masterpieces</a>
+      <a href="../source-guide.html">Source Guide</a>
+      <button class="theme-btn" id="themeToggle" type="button">Theme</button>
+    </nav>
+  </header>
+
+  <main class="master-shell">
+    <section class="master-hero">
+      <div>
+        <p class="label">100 curated buttons</p>
+        <h1>Masterpiece button set.</h1>
+        <p class="lead">These are not mass filler buttons. This folder keeps 100 more polished, usable, premium-style button ideas separate from the 1,000 library.</p>
+      </div>
+
+      <div class="master-preview-wall" id="masterHeroPreview"></div>
+    </section>
+
+    <section class="master-tools">
+      <div class="master-tabs" id="masterTabs"></div>
+      <input class="master-search" id="masterSearch" type="search" placeholder="Search masterpiece buttons..." autocomplete="off">
+    </section>
+
+    <section class="master-grid" id="masterGrid"></section>
+  </main>
+
+  <dialog class="mp-source-dialog" id="mpSourceDialog">
+    <form method="dialog" class="mp-dialog-head">
+      <div>
+        <p class="label">copy source</p>
+        <h2 id="mpDialogTitle">Button source</h2>
+      </div>
+      <button class="mp-dialog-close" type="submit">×</button>
+    </form>
+
+    <div class="mp-dialog-preview" id="mpDialogPreview"></div>
+
+    <div class="mp-code-tabs">
+      <button class="mp-code-tab active" type="button" data-tab="html">HTML</button>
+      <button class="mp-code-tab" type="button" data-tab="css">CSS</button>
+      <button class="mp-code-tab" type="button" data-tab="js">JS</button>
+      <button class="mp-copy-code" id="mpCopyCode" type="button">Copy</button>
+    </div>
+
+    <pre class="mp-code-box"><code id="mpCodeBlock"></code></pre>
+  </dialog>
+
+  <script src="../assets/data.js"></script>
+  <script src="../assets/app.js"></script>
+  <script src="../assets/masterpiece-data.js"></script>
+  <script src="../assets/masterpiece-app.js"></script>
+</body>
+</html>
