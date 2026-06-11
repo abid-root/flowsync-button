@@ -20,9 +20,26 @@ function escapeHtml(value) {
   }[m]));
 }
 
+function updateThemeAssets(theme) {
+  const icon = document.getElementById("siteIcon");
+  if (icon) {
+    const dark = icon.getAttribute("data-dark");
+    const light = icon.getAttribute("data-light");
+    icon.setAttribute("href", theme === "light" ? light : dark);
+  }
+
+  const logo = document.getElementById("brandLogo");
+  if (logo) {
+    const dark = logo.getAttribute("data-dark");
+    const light = logo.getAttribute("data-light");
+    logo.setAttribute("src", theme === "light" ? light : dark);
+  }
+}
+
 function setTheme(theme) {
   document.documentElement.setAttribute("data-theme", theme);
   localStorage.setItem("buttonverse-theme", theme);
+  updateThemeAssets(theme);
 }
 
 function initTheme() {
