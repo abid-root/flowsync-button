@@ -1,9 +1,9 @@
 {
   "name": "FlowSync Button UI Library",
-  "short_name": "FlowSync Buttons",
+  "short_name": "FlowSync",
   "description": "A clean static UI library with curated buttons, premium masterpieces, toggles and physical click-state buttons.",
-  "start_url": "./",
-  "scope": "./",
+  "start_url": ".",
+  "scope": ".",
   "display": "standalone",
   "background_color": "#06090f",
   "theme_color": "#06090f",
@@ -15,7 +15,7 @@
       "purpose": "any maskable"
     },
     {
-      "src": "common/favicon-192.png",
+      "src": "common/favicon-512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any maskable"

@@ -1,99 +1,84 @@
-<!doctype html>
-<html lang="en" data-theme="dark">
+<!DOCTYPE html>
+
+<html data-theme="dark" lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>FlowSync — Toggle Lab</title>
-  <meta name="description" content="A clean static UI library with curated buttons, premium masterpieces, toggles and physical click-state buttons.">
-  <meta name="robots" content="index, follow, max-image-preview:large">
-  <meta name="author" content="Abid Hasan">
-  <meta name="theme-color" content="#06090f">
-  <meta name="color-scheme" content="dark light">
-  <meta name="referrer" content="strict-origin-when-cross-origin">
-  <link rel="canonical" href="https://abid-root.github.io/flowsync-button/toggles/">
-  <link rel="icon" type="image/png" href="../common/favicon-192.png">
-  <link rel="apple-touch-icon" href="../common/apple-touch-icon.png">
-  <link rel="manifest" href="../site.webmanifest">
-  <meta property="og:type" content="website">
-  <meta property="og:site_name" content="FlowSync">
-  <meta property="og:title" content="FlowSync — Toggle Lab">
-  <meta property="og:description" content="A clean static UI library with curated buttons, premium masterpieces, toggles and physical click-state buttons.">
-  <meta property="og:url" content="https://abid-root.github.io/flowsync-button/toggles/">
-  <meta property="og:image" content="https://abid-root.github.io/flowsync-button/common/og-button.png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="FlowSync — Toggle Lab">
-  <meta name="twitter:description" content="A clean static UI library with curated buttons, premium masterpieces, toggles and physical click-state buttons.">
-  <meta name="twitter:image" content="https://abid-root.github.io/flowsync-button/common/og-button.png">
-  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebSite", "name": "FlowSync Button UI Library", "url": "https://abid-root.github.io/flowsync-button/", "description": "A clean static UI library with curated buttons, premium masterpieces, toggles and physical click-state buttons.", "author": {"@type": "Person", "name": "Abid Hasan"}}</script>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>FlowSync — Toggle Lab</title>
+<meta content="A clean static UI library with curated buttons, premium masterpieces, toggles and physical click-state buttons." name="description"/>
+<meta content="index, follow, max-image-preview:large" name="robots"/>
+<meta content="Abid Hasan" name="author"/>
+<meta content="#06090f" name="theme-color"/>
+<meta content="dark light" name="color-scheme"/>
+<meta content="strict-origin-when-cross-origin" name="referrer"/>
+<link href="https://abid-root.github.io/flowsync-button/toggles/" rel="canonical"/>
 
-<link rel="stylesheet" href="../assets/styles.css">
-  <link rel="stylesheet" href="../assets/toggle-lab-quality.css">
-</head>
+
+<link href="../site.webmanifest" rel="manifest"/>
+<meta content="website" property="og:type"/>
+<meta content="FlowSync" property="og:site_name"/>
+<meta content="FlowSync — Toggle Lab" property="og:title"/>
+<meta content="A clean static UI library with curated buttons, premium masterpieces, toggles and physical click-state buttons." property="og:description"/>
+<meta content="https://abid-root.github.io/flowsync-button/toggles/" property="og:url"/>
+<meta content="https://abid-root.github.io/flowsync-button/common/og-button.png" property="og:image"/>
+<meta content="1200" property="og:image:width"/>
+<meta content="630" property="og:image:height"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="FlowSync — Toggle Lab" name="twitter:title"/>
+<meta content="A clean static UI library with curated buttons, premium masterpieces, toggles and physical click-state buttons." name="twitter:description"/>
+<meta content="https://abid-root.github.io/flowsync-button/common/og-button.png" name="twitter:image"/>
+
+<link href="../assets/styles.css" rel="stylesheet"/>
+<link href="../assets/toggle-lab-quality.css" rel="stylesheet"/>
+<link href="../common/favicon-192.png" rel="icon" type="image/png"/><link href="../common/apple-touch-icon.png" rel="apple-touch-icon"/><script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebSite", "name": "FlowSync Button UI Library", "url": "https://abid-root.github.io/flowsync-button/", "description": "A clean static UI library with curated buttons, premium masterpieces, toggles and physical click-state buttons.", "publisher": {"@type": "Organization", "name": "FlowSync", "parentOrganization": {"@type": "Organization", "name": "Coldboot"}}, "author": {"@type": "Person", "name": "Abid Hasan"}}</script></head>
 <body class="toggle-lab-body" data-page="toggles">
-  <div class="ambient" aria-hidden="true"></div>
-
-  <header class="topbar">
-    <a class="brand" href="../index.html" aria-label="FlowSync home">
-      <img id="brandLogo" class="brand-logo" src="../common/blackone.webp" alt="FlowSync logo" width="44" height="44" data-dark="../common/blackone.webp" data-light="../common/whiteone.webp" decoding="async">
-      <span><strong>FlowSync</strong><small>Toggle Lab</small></span>
-    </a>
-    <nav class="toplinks" aria-label="Primary navigation">
-      <a href="../index.html">Lobby</a><a href="../library.html">Library</a><a href="../masterpieces/index.html">Masterpieces</a><a href="../toggles/index.html" aria-current="page">Toggles</a><a href="../physical-buttons/index.html">Physical</a><a href="../source-guide.html">Guide</a>
-      <a href="https://abid-root.github.io/contact/">Contact</a>
-      
-      <button class="theme-btn" id="themeToggle" type="button" aria-label="Toggle theme"><span class="theme-icon sun" aria-hidden="true">☀</span><span class="theme-icon moon" aria-hidden="true">☾</span></button>
-    </nav>
-  </header>
-
+<div aria-hidden="true" class="ambient"></div>
+<header class="topbar">
+<a aria-label="FlowSync home" class="brand" href="../index.html">
+<img alt="FlowSync logo" class="brand-logo" data-dark="../common/blackone.webp" data-light="../common/whiteone.webp" decoding="async" height="44" id="brandLogo" loading="lazy" src="../common/blackone.webp" width="44"/>
+<span><strong>FlowSync</strong><small>Toggle Lab</small></span>
+</a>
+<nav aria-label="Primary navigation" class="toplinks">
+<a href="../index.html">Lobby</a><a href="../library.html">Library</a><a href="../masterpieces/index.html">Masterpieces</a><a aria-current="page" href="../toggles/index.html">Toggles</a><a href="../physical-buttons/index.html">Physical</a><a href="../source-guide.html">Guide</a>
+<a href="https://abid-root.github.io/contact/">Contact</a>
+<button aria-label="Toggle theme" class="theme-btn" id="themeToggle" type="button"><span aria-hidden="true" class="theme-icon sun">☀</span><span aria-hidden="true" class="theme-icon moon">☾</span></button>
+</nav>
+</header>
 <main class="toggle-shell">
-    <section class="toggle-hero">
-      <div>
-        <p class="label">30 quality toggles</p>
-        <h1>Toggle Lab.</h1>
-        <p class="lead">A smaller, cleaner set of useful toggles: theme, privacy, audio, dev tools, AI, smart controls and premium UI switches. Every toggle is clickable and has source code.</p>
-      </div>
-
-      <div class="toggle-hero-wall" id="toggleHeroPreview"></div>
-    </section>
-
-    <section class="toggle-tools">
-      <div class="toggle-tabs" id="toggleTabs"></div>
-      <input class="toggle-search" id="toggleSearch" type="search" placeholder="Search theme, privacy, audio, AI..." autocomplete="off">
-    </section>
-
-    <section class="toggle-grid" id="toggleGrid"></section>
-  </main>
-
-  <dialog class="toggle-source-dialog" id="toggleSourceDialog">
-    <form method="dialog" class="toggle-dialog-head">
-      <div>
-        <p class="label">copy source</p>
-        <h2 id="toggleDialogTitle">Toggle source</h2>
-      </div>
-      <button class="toggle-dialog-close" type="submit"></button>
-    </form>
-
-    <div class="toggle-dialog-preview" id="toggleDialogPreview"></div>
-
-    <div class="toggle-code-tabs">
-      <button class="toggle-code-tab active" type="button" data-tab="html">HTML</button>
-      <button class="toggle-code-tab" type="button" data-tab="css">CSS</button>
-      <button class="toggle-code-tab" type="button" data-tab="js">JS</button>
-      <button class="toggle-copy-code" id="toggleCopyCode" type="button">Copy</button>
-    </div>
-
-    <pre class="toggle-code-box"><code id="toggleCodeBlock"></code></pre>
-  </dialog>
-
-
-
-
-  <script src="../assets/data.js"></script>
-  <script src="../assets/app.js"></script>
-  <script src="../assets/toggle-quality-data.js"></script>
-  <script src="../assets/toggle-quality-app.js"></script>
+<section class="toggle-hero">
+<div>
+<p class="label">30 quality toggles</p>
+<h1>Toggle Lab.</h1>
+<p class="lead">A smaller, cleaner set of useful toggles: theme, privacy, audio, dev tools, AI, smart controls and premium UI switches. Every toggle is clickable and has source code.</p>
+</div>
+<div class="toggle-hero-wall" id="toggleHeroPreview"></div>
+</section>
+<section class="toggle-tools">
+<div class="toggle-tabs" id="toggleTabs"></div>
+<input autocomplete="off" class="toggle-search" id="toggleSearch" placeholder="Search theme, privacy, audio, AI..." type="search"/>
+</section>
+<section class="toggle-grid" id="toggleGrid"></section>
+</main>
+<dialog class="toggle-source-dialog" id="toggleSourceDialog">
+<form class="toggle-dialog-head" method="dialog">
+<div>
+<p class="label">copy source</p>
+<h2 id="toggleDialogTitle">Toggle source</h2>
+</div>
+<button class="toggle-dialog-close" type="submit"></button>
+</form>
+<div class="toggle-dialog-preview" id="toggleDialogPreview"></div>
+<div class="toggle-code-tabs">
+<button class="toggle-code-tab active" data-tab="html" type="button">HTML</button>
+<button class="toggle-code-tab" data-tab="css" type="button">CSS</button>
+<button class="toggle-code-tab" data-tab="js" type="button">JS</button>
+<button class="toggle-copy-code" id="toggleCopyCode" type="button">Copy</button>
+</div>
+<pre class="toggle-code-box"><code id="toggleCodeBlock"></code></pre>
+</dialog>
+<script src="../assets/data.js"></script>
+<script src="../assets/app.js"></script>
+<script src="../assets/toggle-quality-data.js"></script>
+<script src="../assets/toggle-quality-app.js"></script>
 </body>
 </html>
-
