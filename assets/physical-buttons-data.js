@@ -18,7 +18,7 @@ window.FLOWSYNC_PHYSICAL_BUTTONS = [
   { id:"pb-07", category:"dev", title:"Deploy Button", desc:"Dev button moves from draft to deployed.", off:"Deploy", on:"Deployed", iconOff:"⌘", iconOn:"↗", cls:"fp-deploy" },
   { id:"pb-08", category:"dev", title:"Run Build", desc:"Terminal key that changes into build running.", off:"Run Build", on:"Built", iconOff:">", iconOn:"✓", cls:"fp-build" },
   { id:"pb-09", category:"dev", title:"Merge Key", desc:"Git-style button with branch merge state.", off:"Merge", on:"Merged", iconOff:"⑂", iconOn:"⑃", cls:"fp-merge" },
-  { id:"pb-10", category:"dev", title:"Debug Punch", desc:"Debug button punches inward and turns trace mode on.", off:"Debug", on:"Tracing", iconOff:"虫", iconOn:"⌁", cls:"fp-debug" },
+  { id:"pb-10", category:"dev", title:"Debug Punch", desc:"Debug button punches inward and turns trace mode on.", off:"Debug", on:"Tracing", iconOff:"⚙", iconOn:"⌁", cls:"fp-debug" },
   { id:"pb-11", category:"dev", title:"API Connect", desc:"Connector button that physically snaps into connected state.", off:"Connect", on:"Connected", iconOff:"○", iconOn:"●", cls:"fp-api" },
   { id:"pb-12", category:"dev", title:"Copy Token", desc:"Copy button changes into copied with tactile press.", off:"Copy Token", on:"Copied", iconOff:"□", iconOn:"✓", cls:"fp-copy" },
 

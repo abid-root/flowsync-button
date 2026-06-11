@@ -31,7 +31,7 @@ window.FLOWSYNC_QUALITY_TOGGLES = [
   { id:"qt-18", category:"dev-ai", title:"Dev Production", desc:"Development to production environment toggle.", off:"Dev", on:"Prod", iconOff:"{ }", iconOn:"✓", cls:"qt-devprod" },
   { id:"qt-19", category:"dev-ai", title:"AI Agent", desc:"Manual mode becomes agent mode.", off:"Manual", on:"Agent", iconOff:"⌘", iconOn:"AI", cls:"qt-agent" },
   { id:"qt-20", category:"dev-ai", title:"Deploy Lever", desc:"Draft/deploy switch with lever-style movement.", off:"Draft", on:"Deploy", iconOff:"◇", iconOn:"◆", cls:"qt-deploy" },
-  { id:"qt-21", category:"dev-ai", title:"Debug Trace", desc:"Debug mode changes into trace mode.", off:"Debug", on:"Trace", iconOff:"虫", iconOn:"⌁", cls:"qt-trace" },
+  { id:"qt-21", category:"dev-ai", title:"Debug Trace", desc:"Debug mode changes into trace mode.", off:"Debug", on:"Trace", iconOff:"⚙", iconOn:"⌁", cls:"qt-trace" },
   { id:"qt-22", category:"dev-ai", title:"Auto Flow", desc:"Manual workflow turns into auto flow.", off:"Manual", on:"Auto", iconOff:"M", iconOn:"A", cls:"qt-auto" },
 
   { id:"qt-23", category:"smart", title:"Power Core", desc:"Device off/on switch with glowing core.", off:"Off", on:"On", iconOff:"○", iconOn:"⏻", cls:"qt-power" },
