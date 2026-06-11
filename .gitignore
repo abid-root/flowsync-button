@@ -10,3 +10,8 @@ Thumbs.db
 flowsync-final-ready-upload.zip
 apply-flowsync-final-cleanup.ps1
 flowsync-before-final-cleanup_*/
+# local junk - do not commit
+*.bak
+before-*/
+*-before-*/
+flowsync-*-before-*/
