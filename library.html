@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Buttonverse Lab — Library</title>
+  <meta name="description" content="Browse 1000 button ideas with source code.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body data-page="library">
+  <div class="ambient" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <a class="brand" href="index.html">
+      <span class="brand-cube">BV</span>
+      <span><strong>Buttonverse</strong><small>Library</small></span>
+    </a>
+    <nav class="toplinks">
+      <a href="index.html">Lobby</a>
+      <a href="library.html" aria-current="page">Library</a>
+      <a href="source-guide.html">Source Guide</a>
+      <button class="theme-btn" id="themeToggle" type="button">Theme</button>
+    </nav>
+  </header>
+
+  <main class="library-layout">
+    <aside class="filter-dock">
+      <p class="label">filter dock</p>
+      <h2>Button Library</h2>
+      <label>
+        <span>Search</span>
+        <input id="searchInput" type="search" placeholder="submit, pill, deploy, neon..." autocomplete="off">
+      </label>
+      <label>
+        <span>Category</span>
+        <select id="categorySelect"></select>
+      </label>
+      <label>
+        <span>Style</span>
+        <select id="styleSelect">
+          <option value="all">All styles</option>
+          <option value="glass">Glass</option>
+          <option value="terminal">Terminal</option>
+          <option value="neon">Neon</option>
+          <option value="outline">Outline</option>
+          <option value="depth">Depth</option>
+          <option value="liquid">Liquid</option>
+          <option value="minimal">Minimal</option>
+        </select>
+      </label>
+      <button class="dock-random" id="randomBtn" type="button">Shuffle</button>
+      <div class="filter-meta">
+        <strong id="visibleCount">0</strong>
+        <span id="filterLabel">shown now</span>
+      </div>
+    </aside>
+
+    <section class="library-main">
+      <div class="library-head">
+        <div>
+          <p class="label">source included</p>
+          <h1>Find a button. Copy the code.</h1>
+        </div>
+        <p>Search, filter, preview, then copy HTML/CSS/JS.</p>
+      </div>
+
+      <div class="button-grid" id="buttonGrid"></div>
+
+      <div class="load-row">
+        <button class="load-more" id="loadMoreBtn" type="button">Load more</button>
+        <span id="pagerText"></span>
+      </div>
+    </section>
+  </main>
+
+  <dialog class="source-dialog" id="sourceDialog">
+    <form method="dialog" class="dialog-head">
+      <div>
+        <p class="label">copy source</p>
+        <h2 id="dialogTitle">Button source</h2>
+      </div>
+      <button class="dialog-close" type="submit">×</button>
+    </form>
+
+    <div class="dialog-preview" id="dialogPreview"></div>
+
+    <div class="code-toolbar">
+      <button class="code-tab active" type="button" data-tab="html">HTML</button>
+      <button class="code-tab" type="button" data-tab="css">CSS</button>
+      <button class="code-tab" type="button" data-tab="js">JS</button>
+      <button class="copy-code" id="copyCode" type="button">Copy</button>
+    </div>
+
+    <pre class="code-box"><code id="codeBlock"></code></pre>
+  </dialog>
+
+  <script src="assets/data.js"></script>
+  <script src="assets/app.js"></script>
+  <script src="assets/custom-dropdowns.js?v=20260611-151322"></script>
+</body>
+</html>

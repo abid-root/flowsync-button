@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Buttonverse Lab — Lobby</title>
+  <meta name="description" content="A separate static button idea site with 1000 copyable button source codes.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body data-page="lobby">
+  <div class="ambient" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <a class="brand" href="index.html">
+      <span class="brand-cube">BV</span>
+      <span><strong>Buttonverse</strong><small>Lab</small></span>
+    </a>
+    <nav class="toplinks">
+      <a href="index.html" aria-current="page">Lobby</a>
+      <a href="library.html">Library</a>
+      <a href="source-guide.html">Source Guide</a>
+      <button class="theme-btn" id="themeToggle" type="button">Theme</button>
+    </nav>
+  </header>
+
+  <main class="lobby-shell">
+    <section class="lobby-hero">
+      <div class="hero-left">
+        <p class="label">separate project / button UI ideas</p>
+        <h1>Button ideas, clean and ready.</h1>
+        <p class="lead">A separate button inspiration site with a clean lobby, simple library, dark/light theme, and copy-ready source code.</p>
+        <div class="hero-actions">
+          <a class="mega-link" href="library.html">Browse Buttons</a>
+          <a class="ghost-link" href="source-guide.html">Source Guide</a>
+        </div>
+      </div>
+
+      <div class="lobby-device">
+        <div class="device-top">
+          <span></span><span></span><span></span>
+        </div>
+        <div class="device-grid">
+          <button class="bv-btn family-glass motion-shine-pass shape-pill pattern-softlight" style="--hue:38;--hue2:180;--weight:4"><span>✦</span><b>Generate</b></button>
+          <button class="bv-btn family-terminal motion-terminal-blink shape-cut pattern-scan" style="--hue:92;--hue2:160;--weight:2"><span>⌘</span><b>Deploy</b></button>
+          <button class="bv-btn family-depth motion-press-down shape-squircle pattern-grain" style="--hue:255;--hue2:330;--weight:7"><span>◆</span><b>Checkout</b></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="lobby-stats">
+      <article><strong>1000</strong><span>buttons</span></article>
+      <article><strong>20</strong><span>categories</span></article>
+      <article><strong>60</strong><span>render at once</span></article>
+      <article><strong>3</strong><span>code tabs</span></article>
+    </section>
+
+    <section class="category-map">
+      <div class="section-head">
+        <p class="label">Lobby categories</p>
+        <h2>Choose a button world.</h2>
+      </div>
+      <div class="map-grid" id="categoryMap"></div>
+    </section>
+  </main>
+
+  <script src="assets/data.js"></script>
+  <script src="assets/app.js"></script>
+  <script src="assets/custom-dropdowns.js?v=20260611-151322"></script>
+</body>
+</html>
