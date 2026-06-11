@@ -15,3 +15,8 @@ flowsync-before-final-cleanup_*/
 before-*/
 *-before-*/
 flowsync-*-before-*/
+# local/editor
+*.log
+*.tmp
+node_modules/
+__pycache__/

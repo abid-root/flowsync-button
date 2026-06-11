@@ -1,22 +1,23 @@
 {
   "name": "FlowSync Button UI Library",
-  "short_name": "FlowSync",
-  "description": "Curated button, toggle and physical click-state UI components.",
-  "start_url": "./index.html",
+  "short_name": "FlowSync Buttons",
+  "description": "A clean static UI library with curated buttons, premium masterpieces, toggles and physical click-state buttons.",
+  "start_url": "./",
+  "scope": "./",
   "display": "standalone",
-  "background_color": "#0b0b12",
-  "theme_color": "#0b0b12",
+  "background_color": "#06090f",
+  "theme_color": "#06090f",
   "icons": [
     {
-      "src": "common/blackone.webp",
-      "sizes": "512x512",
-      "type": "image/webp",
+      "src": "common/favicon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
       "purpose": "any maskable"
     },
     {
-      "src": "common/whiteone.webp",
+      "src": "common/favicon-192.png",
       "sizes": "512x512",
-      "type": "image/webp",
+      "type": "image/png",
       "purpose": "any maskable"
     }
   ]

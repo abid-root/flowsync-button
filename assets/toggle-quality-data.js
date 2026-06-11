@@ -11,7 +11,7 @@ window.FLOWSYNC_QUALITY_TOGGLES = [
   { id:"qt-01", category:"daily-ui", title:"Theme Orb", desc:"Single theme button: moon becomes sun when active.", off:"Moon", on:"Sun", iconOff:"☾", iconOn:"☀", cls:"qt-theme-orb" },
   { id:"qt-02", category:"daily-ui", title:"Focus Glass", desc:"Reading mode toggle with soft glass motion.", off:"Normal", on:"Focus", iconOff:"◌", iconOn:"◎", cls:"qt-focus-glass" },
   { id:"qt-03", category:"daily-ui", title:"Compact Density", desc:"Changes between comfortable and compact UI.", off:"Comfort", on:"Compact", iconOff:"▤", iconOn:"▦", cls:"qt-density" },
-  { id:"qt-04", category:"daily-ui", title:"Motion Control", desc:"Turns interface animation on and off.", off:"Still", on:"Motion", iconOff:"—", iconOn:"≈", cls:"qt-motion" },
+  { id:"qt-04", category:"daily-ui", title:"Motion Control", desc:"Turns interface animation on and off.", off:"Still", on:"Motion", iconOff:"— ", iconOn:"≈", cls:"qt-motion" },
   { id:"qt-05", category:"daily-ui", title:"Accent Bloom", desc:"Muted interface becomes accent-rich.", off:"Muted", on:"Accent", iconOff:"○", iconOn:"●", cls:"qt-accent" },
   { id:"qt-06", category:"daily-ui", title:"Online Pulse", desc:"Offline/online status toggle.", off:"Offline", on:"Online", iconOff:"×", iconOn:"✓", cls:"qt-online" },
 
