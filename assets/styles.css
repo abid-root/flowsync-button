@@ -1336,3 +1336,79 @@ input:focus {
 }
 
 /* ===== LOBBY MASTERPIECE CARD FIX END ===== */
+
+/* ===== SUN MOON THEME TOGGLE START ===== */
+
+.theme-btn {
+  width: 62px !important;
+  height: 38px !important;
+  min-width: 62px !important;
+  padding: 4px !important;
+  border-radius: 999px !important;
+  border: 1px solid var(--line) !important;
+  background: color-mix(in srgb, var(--surface-2) 84%, transparent) !important;
+  display: inline-grid !important;
+  grid-template-columns: 1fr 1fr !important;
+  align-items: center !important;
+  gap: 2px !important;
+  color: var(--muted) !important;
+  cursor: pointer !important;
+  box-shadow: none !important;
+}
+
+.theme-icon {
+  width: 28px !important;
+  height: 28px !important;
+  display: grid !important;
+  place-items: center !important;
+  border-radius: 999px !important;
+  font-size: 0.95rem !important;
+  line-height: 1 !important;
+  transition:
+    background 160ms ease,
+    color 160ms ease,
+    transform 160ms ease,
+    opacity 160ms ease !important;
+}
+
+.theme-btn:hover .theme-icon {
+  color: var(--text) !important;
+}
+
+/* dark active = moon */
+:root[data-theme="dark"] .theme-icon.moon {
+  background: linear-gradient(135deg, var(--accent), var(--accent-2)) !important;
+  color: #11100d !important;
+  transform: scale(1.02) !important;
+}
+
+:root[data-theme="dark"] .theme-icon.sun {
+  opacity: 0.55 !important;
+}
+
+/* light active = sun */
+:root[data-theme="light"] .theme-icon.sun {
+  background: linear-gradient(135deg, var(--accent), var(--accent-2)) !important;
+  color: #11100d !important;
+  transform: scale(1.02) !important;
+}
+
+:root[data-theme="light"] .theme-icon.moon {
+  opacity: 0.55 !important;
+}
+
+@media (max-width: 660px) {
+  .theme-btn {
+    width: 58px !important;
+    height: 36px !important;
+    min-width: 58px !important;
+  }
+
+  .theme-icon {
+    width: 26px !important;
+    height: 26px !important;
+    font-size: 0.88rem !important;
+  }
+}
+
+/* ===== SUN MOON THEME TOGGLE END ===== */

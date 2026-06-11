@@ -38,12 +38,12 @@ function updateThemeAssets(theme) {
 
 function setTheme(theme) {
   document.documentElement.setAttribute("data-theme", theme);
-  localStorage.setItem("buttonverse-theme", theme);
+  localStorage.setItem("flowsync-theme", theme);
   updateThemeAssets(theme);
 }
 
 function initTheme() {
-  const saved = localStorage.getItem("buttonverse-theme"); if (saved === "light" || saved === "dark") setTheme(saved); else setTheme("dark");
+  const saved = localStorage.getItem("flowsync-theme"); if (saved === "light" || saved === "dark") setTheme(saved); else setTheme("dark");
   const toggle = $("#themeToggle");
   if (!toggle) return;
   toggle.addEventListener("click", () => {
