@@ -4,34 +4,49 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>FlowSync — Button Library</title>
-  <meta name="description" content="Browse 1000 button ideas with source code.">
+  <meta name="description" content="Browse 120 curated button ideas with copyable HTML, CSS and JavaScript source code.">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="author" content="Abid Hasan">
+  <meta name="theme-color" content="#0b0b12">
+  <meta name="color-scheme" content="dark light">
+  <link rel="canonical" href="https://abid-root.github.io/flowsync-button/library.html">
   <link id="siteIcon" rel="icon" href="common/blackone.webp" type="image/webp" data-dark="common/blackone.webp" data-light="common/whiteone.webp">
+  <link rel="apple-touch-icon" href="common/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="FlowSync — Button Library">
+  <meta property="og:description" content="Browse 120 curated button ideas with copyable HTML, CSS and JavaScript source code.">
+  <meta property="og:url" content="https://abid-root.github.io/flowsync-button/library.html">
+  <meta property="og:image" content="https://abid-root.github.io/flowsync-button/common/blackone.webp">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="FlowSync — Button Library">
+  <meta name="twitter:description" content="Browse 120 curated button ideas with copyable HTML, CSS and JavaScript source code.">
+  <meta name="twitter:image" content="https://abid-root.github.io/flowsync-button/common/blackone.webp">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; object-src 'none'; upgrade-insecure-requests">
   <link rel="stylesheet" href="assets/styles.css">
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebSite", "name": "FlowSync", "url": "https://abid-root.github.io/flowsync-button/", "description": "Browse 120 curated button ideas with copyable HTML, CSS and JavaScript source code.", "author": {"@type": "Person", "name": "Abid Hasan"}}</script>
 </head>
 <body data-page="library">
   <div class="ambient" aria-hidden="true"></div>
 
   <header class="topbar">
-    <a class="brand" href="index.html">
-      <img id="brandLogo" class="brand-logo" src="common/blackone.webp" alt="FlowSync logo" data-dark="common/blackone.webp" data-light="common/whiteone.webp">
+    <a class="brand" href="index.html" aria-label="FlowSync home">
+      <img id="brandLogo" class="brand-logo" src="common/blackone.webp" alt="FlowSync logo" width="44" height="44" data-dark="common/blackone.webp" data-light="common/whiteone.webp">
       <span><strong>FlowSync</strong><small>Library</small></span>
     </a>
-    <nav class="toplinks">
-      <a href="index.html">Lobby</a>
-      <a href="library.html" aria-current="page">Library</a>
-      <a href="masterpieces/index.html">Masterpieces</a>
-      <a href="source-guide.html">Source Guide</a>
+    <nav class="toplinks" aria-label="Primary navigation">
+      <a href="index.html">Lobby</a><a href="library.html" aria-current="page">Library</a><a href="masterpieces/index.html">Masterpieces</a><a href="toggles/index.html">Toggles</a><a href="physical-buttons/index.html">Physical</a><a href="source-guide.html">Guide</a>
       <button class="theme-btn" id="themeToggle" type="button" aria-label="Toggle theme"><span class="theme-icon sun" aria-hidden="true">☀</span><span class="theme-icon moon" aria-hidden="true">☾</span></button>
     </nav>
   </header>
 
   <main class="library-layout">
-    <aside class="filter-dock">
-      <p class="label">filter dock</p>
-      <h2>Button Library</h2>
+    <aside class="filter-dock" aria-label="Library filters">
+      <p class="label">filter</p>
+      <h2>Library</h2>
       <label>
         <span>Search</span>
-        <input id="searchInput" type="search" placeholder="submit, pill, deploy, neon..." autocomplete="off">
+        <input id="searchInput" type="search" placeholder="checkout, deploy, login..." autocomplete="off">
       </label>
       <label>
         <span>Category</span>
@@ -60,10 +75,10 @@
     <section class="library-main">
       <div class="library-head">
         <div>
-          <p class="label">source included</p>
-          <h1>Find a button. Copy the code.</h1>
+          <p class="label">curated source library</p>
+          <h1>Useful buttons, not filler.</h1>
         </div>
-        <p>Search, filter, preview, then copy HTML/CSS/JS.</p>
+        <p>Search, filter, preview and copy the source. The old mass library has been reduced to stronger reusable categories.</p>
       </div>
 
       <div class="button-grid" id="buttonGrid"></div>
@@ -81,7 +96,7 @@
         <p class="label">copy source</p>
         <h2 id="dialogTitle">Button source</h2>
       </div>
-      <button class="dialog-close" type="submit">×</button>
+      <button class="dialog-close" type="submit" aria-label="Close source dialog">×</button>
     </form>
 
     <div class="dialog-preview" id="dialogPreview"></div>
@@ -98,6 +113,6 @@
 
   <script src="assets/data.js"></script>
   <script src="assets/app.js"></script>
-  <script src="assets/custom-dropdowns.js?v=20260611-151322"></script>
+  <script src="assets/custom-dropdowns.js"></script>
 </body>
 </html>

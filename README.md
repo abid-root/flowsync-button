@@ -1,24 +1,14 @@
-# FlowSync
+# FlowSync Button UI Library
 
-A completely separate static website for button ideas.
-
-## Important
-This is not an addon for the cursor library.
-This is a new project folder with its own pages, UI, theme, styles and links.
+Static front-end UI library with curated button components.
 
 ## Pages
-- `index.html` — Lobby
-- `library.html` — 1000 button library
-- `source-guide.html` — source code guide
+- `index.html` — lobby
+- `library.html` — curated button library
+- `masterpieces/index.html` — premium button set
+- `toggles/index.html` — 30 quality toggles
+- `physical-buttons/index.html` — 30 physical click-state buttons
+- `source-guide.html` — source guide
 
-## Features
-- 1000 button ideas
-- 20 categories
-- Dark and light theme
-- Search/filter/random
-- 60-card rendering batch for speed
-- Source modal with HTML, CSS and JS tabs
-- No backend, no framework, no build step
-
-## Run
-Open `index.html`, or use VS Code Live Server.
+## Ready to upload
+Upload everything in this folder to GitHub Pages or any static host.

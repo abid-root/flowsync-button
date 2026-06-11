@@ -4,23 +4,38 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>FlowSync — Source Guide</title>
-  <meta name="description" content="How to copy and use button source code.">
+  <meta name="description" content="How to copy and use FlowSync button, toggle and physical button source code.">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="author" content="Abid Hasan">
+  <meta name="theme-color" content="#0b0b12">
+  <meta name="color-scheme" content="dark light">
+  <link rel="canonical" href="https://abid-root.github.io/flowsync-button/source-guide.html">
   <link id="siteIcon" rel="icon" href="common/blackone.webp" type="image/webp" data-dark="common/blackone.webp" data-light="common/whiteone.webp">
+  <link rel="apple-touch-icon" href="common/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="FlowSync — Source Guide">
+  <meta property="og:description" content="How to copy and use FlowSync button, toggle and physical button source code.">
+  <meta property="og:url" content="https://abid-root.github.io/flowsync-button/source-guide.html">
+  <meta property="og:image" content="https://abid-root.github.io/flowsync-button/common/blackone.webp">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="FlowSync — Source Guide">
+  <meta name="twitter:description" content="How to copy and use FlowSync button, toggle and physical button source code.">
+  <meta name="twitter:image" content="https://abid-root.github.io/flowsync-button/common/blackone.webp">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; object-src 'none'; upgrade-insecure-requests">
   <link rel="stylesheet" href="assets/styles.css">
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebSite", "name": "FlowSync", "url": "https://abid-root.github.io/flowsync-button/", "description": "How to copy and use FlowSync button, toggle and physical button source code.", "author": {"@type": "Person", "name": "Abid Hasan"}}</script>
 </head>
 <body data-page="guide">
   <div class="ambient" aria-hidden="true"></div>
 
   <header class="topbar">
-    <a class="brand" href="index.html">
-      <img id="brandLogo" class="brand-logo" src="common/blackone.webp" alt="FlowSync logo" data-dark="common/blackone.webp" data-light="common/whiteone.webp">
+    <a class="brand" href="index.html" aria-label="FlowSync home">
+      <img id="brandLogo" class="brand-logo" src="common/blackone.webp" alt="FlowSync logo" width="44" height="44" data-dark="common/blackone.webp" data-light="common/whiteone.webp">
       <span><strong>FlowSync</strong><small>Guide</small></span>
     </a>
-    <nav class="toplinks">
-      <a href="index.html">Lobby</a>
-      <a href="library.html">Library</a>
-      <a href="masterpieces/index.html">Masterpieces</a>
-      <a href="source-guide.html" aria-current="page">Source Guide</a>
+    <nav class="toplinks" aria-label="Primary navigation">
+      <a href="index.html">Lobby</a><a href="library.html">Library</a><a href="masterpieces/index.html">Masterpieces</a><a href="toggles/index.html">Toggles</a><a href="physical-buttons/index.html">Physical</a><a href="source-guide.html" aria-current="page">Guide</a>
       <button class="theme-btn" id="themeToggle" type="button" aria-label="Toggle theme"><span class="theme-icon sun" aria-hidden="true">☀</span><span class="theme-icon moon" aria-hidden="true">☾</span></button>
     </nav>
   </header>
@@ -28,31 +43,18 @@
   <main class="guide-shell">
     <section class="guide-hero">
       <p class="label">source guide</p>
-      <h1>Every button has source code.</h1>
-      <p class="lead">Open the Library, press Source on any button, then copy the HTML, CSS, or JS tab. No backend, no framework, no build step.</p>
+      <h1>Copy. Paste. Customize.</h1>
+      <p class="lead">Every FlowSync component has HTML, CSS and optional JavaScript. Use the component as a starting point, then rename classes and colors for your own project.</p>
     </section>
 
     <section class="guide-grid">
-      <article>
-        <span>01</span>
-        <h2>HTML tab</h2>
-        <p>Gives the button markup with icon and label.</p>
-      </article>
-      <article>
-        <span>02</span>
-        <h2>CSS tab</h2>
-        <p>Gives the button styling, shape, family and hover animation.</p>
-      </article>
-      <article>
-        <span>03</span>
-        <h2>JS tab</h2>
-        <p>Optional click micro-interaction you can paste into a site.</p>
-      </article>
+      <article><span>01</span><h2>HTML</h2><p>Copy the markup for the button, toggle or physical click-state control.</p></article>
+      <article><span>02</span><h2>CSS</h2><p>Copy the base style and the selected design class. Keep class names unique in your own project.</p></article>
+      <article><span>03</span><h2>JS</h2><p>Use the optional click script for toggles and physical state buttons.</p></article>
     </section>
   </main>
 
   <script src="assets/data.js"></script>
   <script src="assets/app.js"></script>
-  <script src="assets/custom-dropdowns.js?v=20260611-151322"></script>
 </body>
 </html>

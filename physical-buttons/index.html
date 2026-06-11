@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FlowSync — Physical Buttons</title>
+  <meta name="description" content="30 physical click-state buttons that press down and change state.">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="author" content="Abid Hasan">
+  <meta name="theme-color" content="#0b0b12">
+  <meta name="color-scheme" content="dark light">
+  <link rel="canonical" href="https://abid-root.github.io/flowsync-button/physical-buttons/">
+  <link id="siteIcon" rel="icon" href="../common/blackone.webp" type="image/webp" data-dark="../common/blackone.webp" data-light="../common/whiteone.webp">
+  <link rel="apple-touch-icon" href="../common/apple-touch-icon.png">
+  <link rel="manifest" href="../site.webmanifest">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="FlowSync — Physical Buttons">
+  <meta property="og:description" content="30 physical click-state buttons that press down and change state.">
+  <meta property="og:url" content="https://abid-root.github.io/flowsync-button/physical-buttons/">
+  <meta property="og:image" content="https://abid-root.github.io/flowsync-button/common/blackone.webp">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="FlowSync — Physical Buttons">
+  <meta name="twitter:description" content="30 physical click-state buttons that press down and change state.">
+  <meta name="twitter:image" content="https://abid-root.github.io/flowsync-button/common/blackone.webp">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; object-src 'none'; upgrade-insecure-requests">
+  <link rel="stylesheet" href="../assets/styles.css">
+  <link rel="stylesheet" href="../assets/physical-buttons.css">
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebSite", "name": "FlowSync", "url": "https://abid-root.github.io/flowsync-button/", "description": "30 physical click-state buttons that press down and change state.", "author": {"@type": "Person", "name": "Abid Hasan"}}</script>
+</head>
+<body class="physical-body" data-page="physical">
+  <div class="ambient" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <a class="brand" href="../index.html" aria-label="FlowSync home">
+      <img id="brandLogo" class="brand-logo" src="../common/blackone.webp" alt="FlowSync logo" width="44" height="44" data-dark="../common/blackone.webp" data-light="../common/whiteone.webp">
+      <span><strong>FlowSync</strong><small>Physical Buttons</small></span>
+    </a>
+    <nav class="toplinks" aria-label="Primary navigation">
+      <a href="../index.html">Lobby</a><a href="../library.html">Library</a><a href="../masterpieces/index.html">Masterpieces</a><a href="../toggles/index.html">Toggles</a><a href="../physical-buttons/index.html" aria-current="page">Physical</a><a href="../source-guide.html">Guide</a>
+      <button class="theme-btn" id="themeToggle" type="button" aria-label="Toggle theme"><span class="theme-icon sun" aria-hidden="true">☀</span><span class="theme-icon moon" aria-hidden="true">☾</span></button>
+    </nav>
+  </header>
+
+<main class="physical-shell">
+    <section class="physical-hero">
+      <div>
+        <p class="label">30 physical state buttons</p>
+        <h1>Click. Press. Change.</h1>
+        <p class="lead">These buttons are not just hover styles. Click once and they physically press into a new state. Click again and they return. Useful for power, deploy, record, checkout, unlock and more.</p>
+      </div>
+
+      <div class="physical-hero-wall" id="physicalHeroPreview"></div>
+    </section>
+
+    <section class="physical-tools">
+      <div class="physical-tabs" id="physicalTabs"></div>
+      <input class="physical-search" id="physicalSearch" type="search" placeholder="Search deploy, record, checkout, unlock..." autocomplete="off">
+    </section>
+
+    <section class="physical-grid" id="physicalGrid"></section>
+  </main>
+
+  <dialog class="physical-source-dialog" id="physicalSourceDialog">
+    <form method="dialog" class="physical-dialog-head">
+      <div>
+        <p class="label">copy source</p>
+        <h2 id="physicalDialogTitle">Button source</h2>
+      </div>
+      <button class="physical-dialog-close" type="submit">×</button>
+    </form>
+
+    <div class="physical-dialog-preview" id="physicalDialogPreview"></div>
+
+    <div class="physical-code-tabs">
+      <button class="physical-code-tab active" type="button" data-tab="html">HTML</button>
+      <button class="physical-code-tab" type="button" data-tab="css">CSS</button>
+      <button class="physical-code-tab" type="button" data-tab="js">JS</button>
+      <button class="physical-copy-code" id="physicalCopyCode" type="button">Copy</button>
+    </div>
+
+    <pre class="physical-code-box"><code id="physicalCodeBlock"></code></pre>
+  </dialog>
+
+
+
+
+  <script src="../assets/data.js"></script>
+  <script src="../assets/app.js"></script>
+  <script src="../assets/physical-buttons-data.js"></script>
+  <script src="../assets/physical-buttons-app.js"></script>
+</body>
+</html>

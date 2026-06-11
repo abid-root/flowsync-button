@@ -3,7 +3,7 @@ const App = {
   buttons: [],
   filtered: [],
   shown: 0,
-  pageSize: 60,
+  pageSize: 48,
   category: "all",
   style: "all",
   search: "",
@@ -72,7 +72,8 @@ function renderButton(btn) {
 function renderLobby() {
   const map = $("#categoryMap");
   if (!map) return;
-  map.innerHTML = BUTTONVERSE_CATEGORIES.map((cat) => `
+
+  const coreCards = BUTTONVERSE_CATEGORIES.map((cat) => `
     <a class="category-card" href="library.html?category=${cat.id}">
       <span class="icon">${cat.icon}</span>
       <small>${cat.count} buttons</small>
@@ -80,6 +81,39 @@ function renderLobby() {
       <p>${escapeHtml(cat.desc)}</p>
     </a>
   `).join("");
+
+  const collectionCards = [
+    {
+      href: "masterpieces/index.html",
+      icon: "✦",
+      count: "100 buttons",
+      title: "Masterpieces",
+      desc: "The polished premium set for hero sections and real projects."
+    },
+    {
+      href: "toggles/index.html",
+      icon: "◑",
+      count: "30 toggles",
+      title: "Toggle Lab",
+      desc: "A small quality set of clickable switches for settings and states."
+    },
+    {
+      href: "physical-buttons/index.html",
+      icon: "▣",
+      count: "30 buttons",
+      title: "Physical Buttons",
+      desc: "Click-state buttons that press down and change state."
+    }
+  ].map((card) => `
+    <a class="category-card special-card" href="${card.href}">
+      <span class="icon">${card.icon}</span>
+      <small>${card.count}</small>
+      <h3>${escapeHtml(card.title)}</h3>
+      <p>${escapeHtml(card.desc)}</p>
+    </a>
+  `).join("");
+
+  map.innerHTML = coreCards + collectionCards;
 }
 
 function hydrateFilters() {

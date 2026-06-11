@@ -1,5 +1,12 @@
-# local generated backups
+# Local/generated
 _local-backups/
-buttonverse-lab-before-*/
-buttonverse-lab-nested-*/
-# local backups - do not commit
+*.zip
+*.ps1
+.venv/
+.vscode/
+.DS_Store
+Thumbs.db
+# local install files
+flowsync-final-ready-upload.zip
+apply-flowsync-final-cleanup.ps1
+flowsync-before-final-cleanup_*/

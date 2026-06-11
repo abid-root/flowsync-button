@@ -1,0 +1,23 @@
+{
+  "name": "FlowSync Button UI Library",
+  "short_name": "FlowSync",
+  "description": "Curated button, toggle and physical click-state UI components.",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#0b0b12",
+  "theme_color": "#0b0b12",
+  "icons": [
+    {
+      "src": "common/blackone.webp",
+      "sizes": "512x512",
+      "type": "image/webp",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "common/whiteone.webp",
+      "sizes": "512x512",
+      "type": "image/webp",
+      "purpose": "any maskable"
+    }
+  ]
+}
