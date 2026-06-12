@@ -1,116 +1,196 @@
-<!DOCTYPE html>
+<!doctype html>
 
 <html data-theme="dark" lang="en">
-<head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1" name="viewport"/>
-<title>FlowSync — Button Library</title>
-<meta content="A clean static UI library with curated buttons, premium masterpieces, toggles and physical click-state buttons." name="description"/>
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>FlowSync — Button Library</title>
+    <meta
+      content="A clean static UI library with curated buttons, premium masterpieces, toggles and physical click-state buttons."
+      name="description"
+    />
 
+    <link href="site.webmanifest" rel="manifest" />
 
-<link href="site.webmanifest" rel="manifest"/>
-
-<link href="assets/styles.css" rel="stylesheet"/>
-<link href="common/favicon-192.png" rel="icon" type="image/png"/><link href="common/apple-touch-icon.png" rel="apple-touch-icon"/><script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebSite", "name": "FlowSync Button UI Library", "url": "https://abid-root.github.io/flowsync-button/", "description": "A clean static UI library with curated buttons, premium masterpieces, toggles and physical click-state buttons.", "publisher": {"@type": "Organization", "name": "FlowSync", "parentOrganization": {"@type": "Organization", "name": "Coldboot"}}, "author": {"@type": "Person", "name": "Abid Hasan"}}</script>
-<meta name="description" content="Browse curated button ideas, toggle patterns, source code, and UI inspiration in FlowSync Button Lab.">
-<meta name="robots" content="index, follow, max-image-preview:large">
-<meta name="author" content="Abid Hasan">
-<meta name="theme-color" content="#06090f">
-<meta name="color-scheme" content="dark light">
-<meta name="referrer" content="strict-origin-when-cross-origin">
-<link rel="canonical" href="https://abid-root.github.io/floesync-button-site/library.html">
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="FlowSync">
-<meta property="og:title" content="FlowSync — Button Library">
-<meta property="og:description" content="Browse curated button ideas, toggle patterns, source code, and UI inspiration in FlowSync Button Lab.">
-<meta property="og:url" content="https://abid-root.github.io/floesync-button-site/library.html">
-<meta property="og:image" content="https://abid-root.github.io/floesync-button-site/common/og.png">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="FlowSync — Button Library">
-<meta name="twitter:description" content="Browse curated button ideas, toggle patterns, source code, and UI inspiration in FlowSync Button Lab.">
-<meta name="twitter:image" content="https://abid-root.github.io/floesync-button-site/common/og.png">
-
-</head>
-<body data-page="library">
-<div aria-hidden="true" class="ambient"></div>
-<header class="topbar">
-<a aria-label="FlowSync home" class="brand" href="index.html">
-<img alt="FlowSync logo" class="brand-logo" data-dark="common/blackone.webp" data-light="common/whiteone.webp" decoding="async" height="44" id="brandLogo" loading="lazy" src="common/blackone.webp" width="44"/>
-<span><strong>FlowSync</strong><small>Library</small></span>
-</a>
-<nav aria-label="Primary navigation" class="toplinks">
-<a href="index.html">Lobby</a><a aria-current="page" href="library.html">Library</a><a href="masterpieces/index.html">Masterpieces</a><a href="toggles/index.html">Toggles</a><a href="physical-buttons/index.html">Physical</a><a href="source-guide.html">Guide</a>
-<a href="https://abid-root.github.io/contact/">Contact</a>
-<button aria-label="Toggle theme" class="theme-btn" id="themeToggle" type="button"><span aria-hidden="true" class="theme-icon sun">☀</span><span aria-hidden="true" class="theme-icon moon">☾</span></button>
-</nav>
-</header>
-<main class="library-layout">
-<aside aria-label="Library filters" class="filter-dock">
-<p class="label">filter</p>
-<h2>Library</h2>
-<label>
-<span>Search</span>
-<input autocomplete="off" id="searchInput" placeholder="checkout, deploy, login..." type="search"/>
-</label>
-<label>
-<span>Category</span>
-<select id="categorySelect"></select>
-</label>
-<label>
-<span>Style</span>
-<select id="styleSelect">
-<option value="all">All styles</option>
-<option value="glass">Glass</option>
-<option value="terminal">Terminal</option>
-<option value="neon">Neon</option>
-<option value="outline">Outline</option>
-<option value="depth">Depth</option>
-<option value="liquid">Liquid</option>
-<option value="minimal">Minimal</option>
-</select>
-</label>
-<button class="dock-random" id="randomBtn" type="button">Shuffle</button>
-<div class="filter-meta">
-<strong id="visibleCount">0</strong>
-<span id="filterLabel">shown now</span>
-</div>
-</aside>
-<section class="library-main">
-<div class="library-head">
-<div>
-<p class="label">curated source library</p>
-<h1>Useful buttons, not filler.</h1>
-</div>
-<p>Search, filter, preview and copy the source. The old mass library has been reduced to stronger reusable categories.</p>
-</div>
-<div class="button-grid" id="buttonGrid"></div>
-<div class="load-row">
-<button class="load-more" id="loadMoreBtn" type="button">Load more</button>
-<span id="pagerText"></span>
-</div>
-</section>
-</main>
-<dialog class="source-dialog" id="sourceDialog">
-<form class="dialog-head" method="dialog">
-<div>
-<p class="label">copy source</p>
-<h2 id="dialogTitle">Button source</h2>
-</div>
-<button aria-label="Close source dialog" class="dialog-close" type="submit"></button>
-</form>
-<div class="dialog-preview" id="dialogPreview"></div>
-<div class="code-toolbar">
-<button class="code-tab active" data-tab="html" type="button">HTML</button>
-<button class="code-tab" data-tab="css" type="button">CSS</button>
-<button class="code-tab" data-tab="js" type="button">JS</button>
-<button class="copy-code" id="copyCode" type="button">Copy</button>
-</div>
-<pre class="code-box"><code id="codeBlock"></code></pre>
-</dialog>
-<script src="assets/data.js"></script>
-<script src="assets/app.js"></script>
-<script src="assets/custom-dropdowns.js"></script>
-</body>
+    <link href="assets/styles.css" rel="stylesheet" />
+    <link href="common/favicon-192.png" rel="icon" type="image/png" />
+    <link href="common/apple-touch-icon.png" rel="apple-touch-icon" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "FlowSync Button UI Library",
+        "url": "https://abid-root.github.io/flowsync-button/",
+        "description": "A clean static UI library with curated buttons, premium masterpieces, toggles and physical click-state buttons.",
+        "publisher": {
+          "@type": "Organization",
+          "name": "FlowSync",
+          "parentOrganization": { "@type": "Organization", "name": "Coldboot" }
+        },
+        "author": { "@type": "Person", "name": "Abid Hasan" }
+      }
+    </script>
+    <meta
+      name="description"
+      content="Browse curated button ideas, toggle patterns, source code, and UI inspiration in FlowSync Button Lab."
+    />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta name="author" content="Abid Hasan" />
+    <meta name="theme-color" content="#06090f" />
+    <meta name="color-scheme" content="dark light" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <link
+      rel="canonical"
+      href="https://abid-root.github.io/floesync-button-site/library.html"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="FlowSync" />
+    <meta property="og:title" content="FlowSync — Button Library" />
+    <meta
+      property="og:description"
+      content="Browse curated button ideas, toggle patterns, source code, and UI inspiration in FlowSync Button Lab."
+    />
+    <meta
+      property="og:url"
+      content="https://abid-root.github.io/floesync-button-site/library.html"
+    />
+    <meta
+      property="og:image"
+      content="https://abid-root.github.io/floesync-button-site/common/og.png"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="FlowSync — Button Library" />
+    <meta
+      name="twitter:description"
+      content="Browse curated button ideas, toggle patterns, source code, and UI inspiration in FlowSync Button Lab."
+    />
+    <meta
+      name="twitter:image"
+      content="https://abid-root.github.io/floesync-button-site/common/og.png"
+    />
+  </head>
+  <body data-page="library">
+    <div aria-hidden="true" class="ambient"></div>
+    <header class="topbar">
+      <a aria-label="FlowSync home" class="brand" href="index.html">
+        <img
+          alt="FlowSync logo"
+          class="brand-logo"
+          data-dark="common/blackone.webp"
+          data-light="common/whiteone.webp"
+          decoding="async"
+          height="44"
+          id="brandLogo"
+          loading="lazy"
+          src="common/blackone.webp"
+          width="44"
+        />
+        <span><strong>FlowSync</strong><small>Library</small></span>
+      </a>
+      <nav aria-label="Primary navigation" class="toplinks">
+        <a href="index.html">Lobby</a
+        ><a aria-current="page" href="library.html">Library</a
+        ><a href="masterpieces/index.html">Masterpieces</a
+        ><a href="toggles/index.html">Toggles</a
+        ><a href="physical-buttons/index.html">Physical</a
+        ><a href="source-guide.html">Guide</a>
+        <a href="https://abid-root.github.io/contact/">Contact</a>
+        <button
+          aria-label="Toggle theme"
+          class="theme-btn"
+          id="themeToggle"
+          type="button"
+        >
+          <span aria-hidden="true" class="theme-icon sun">☀</span
+          ><span aria-hidden="true" class="theme-icon moon">☾</span>
+        </button>
+      </nav>
+    </header>
+    <main class="library-layout">
+      <aside aria-label="Library filters" class="filter-dock">
+        <p class="label">filter</p>
+        <h2>Library</h2>
+        <label>
+          <span>Search</span>
+          <input
+            autocomplete="off"
+            id="searchInput"
+            placeholder="checkout, deploy, login..."
+            type="search"
+          />
+        </label>
+        <label>
+          <span>Category</span>
+          <select id="categorySelect"></select>
+        </label>
+        <label>
+          <span>Style</span>
+          <select id="styleSelect">
+            <option value="all">All styles</option>
+            <option value="glass">Glass</option>
+            <option value="terminal">Terminal</option>
+            <option value="neon">Neon</option>
+            <option value="outline">Outline</option>
+            <option value="depth">Depth</option>
+            <option value="liquid">Liquid</option>
+            <option value="minimal">Minimal</option>
+          </select>
+        </label>
+        <button class="dock-random" id="randomBtn" type="button">
+          Shuffle
+        </button>
+        <div class="filter-meta">
+          <strong id="visibleCount">0</strong>
+          <span id="filterLabel">shown now</span>
+        </div>
+      </aside>
+      <section class="library-main">
+        <div class="library-head">
+          <div>
+            <p class="label">curated source library</p>
+            <h1>Useful buttons, not filler.</h1>
+          </div>
+          <p>
+            Search, filter, preview and copy the source. The old mass library
+            has been reduced to stronger reusable categories.
+          </p>
+        </div>
+        <div class="button-grid" id="buttonGrid"></div>
+        <div class="load-row">
+          <button class="load-more" id="loadMoreBtn" type="button">
+            Load more
+          </button>
+          <span id="pagerText"></span>
+        </div>
+      </section>
+    </main>
+    <dialog class="source-dialog" id="sourceDialog">
+      <form class="dialog-head" method="dialog">
+        <div>
+          <p class="label">copy source</p>
+          <h2 id="dialogTitle">Button source</h2>
+        </div>
+        <button
+          aria-label="Close source dialog"
+          class="dialog-close"
+          type="submit"
+        ></button>
+      </form>
+      <div class="dialog-preview" id="dialogPreview"></div>
+      <div class="code-toolbar">
+        <button class="code-tab active" data-tab="html" type="button">
+          HTML
+        </button>
+        <button class="code-tab" data-tab="css" type="button">CSS</button>
+        <button class="code-tab" data-tab="js" type="button">JS</button>
+        <button class="copy-code" id="copyCode" type="button">Copy</button>
+      </div>
+      <pre class="code-box"><code id="codeBlock"></code></pre>
+    </dialog>
+    <script src="assets/data.js"></script>
+    <script src="assets/app.js"></script>
+    <script src="assets/custom-dropdowns.js"></script>
+  </body>
 </html>
