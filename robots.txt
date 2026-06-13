@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: https://abid-root.github.io/floesync-button-site/sitemap.xml
+
+Sitemap: https://abid-root.github.io/flowsync-button/sitemap.xml
